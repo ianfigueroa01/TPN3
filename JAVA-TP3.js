@@ -165,3 +165,70 @@ document.write(parOimpar(numeroEntero))*/
 
 // ----- DESARROLLO ----- //
 
+/*function cadenaFormada(cadenaIngresada){
+    if(cadenaIngresada === cadenaIngresada.toUpperCase()){
+        return "cadena formada solo por máyusculas.";
+    }
+    else if(cadenaIngresada === cadenaIngresada.toLowerCase()){
+        return "cadena formada solo por minúsculas.";
+    }
+    else{
+        return "cadena formada por máyusculas y minúsculas."
+    }
+}
+
+let ingresarCadena = prompt("Ingresar cadena de texto")
+document.write("La cadena ingresada '" + ingresarCadena + "' es una " + cadenaFormada(ingresarCadena))*/
+
+// -------------------------------------------------- //
+
+// EJERCICIO 6
+// Solicitar por pantalla al usuario ingresar el valor de los lados de un rectángulo, 
+// luego crear una función para calcular su perímetro y mostrarlo por pantalla.
+
+// -La fórmula del perímetro  es p = 2*(a +b)
+
+// ----- DESARROLLO ----- //
+
+/*function perimetroRectangulo(baseIngresada, alturaIngresada){
+    return (2 * (baseIngresada + alturaIngresada));
+}
+
+let base = parseInt(prompt("Ingresar base de rectángulo"))
+let altura = parseInt(prompt("Ingresar altura de rectángulo"))
+
+while(base === altura){
+    alert("La base y la altura deben tener distintos valores. Por favor, volver a intentarlo");
+    base = parseInt(prompt("Ingresar base de rectángulo"))
+    altura = parseInt(prompt("Ingresar altura de rectángulo"))
+}
+
+document.write("El perimetro del rectángulo de base " + base + " y altura " + altura + " es: " + perimetroRectangulo(base, altura))*/
+
+// -------------------------------------------------- //
+
+// EJERCICIO 7
+// Escriba un script que muestre la tabla de multiplicar de un número ingresado por 
+// pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo 
+// los resultados del 1 al 10 del número elegido por el usuario.
+
+// ----- DESARROLLO ----- //
+
+/*function tablaMultiplicar(numeroIngresado){
+    document.write("<table border>");
+
+    document.write("<tr><td>N. Ingresado = " + numeroIngresado + "</td><td> Resultado </td></tr>" );
+    for(let i=1; i<=10; i++){
+        document.write("<tr>");
+
+        document.write("<td>" + numeroIngresado + " x " + i + "</td>");
+        document.write("<td>" + (numeroIngresado * i) + "</td>");
+
+        document.write("</tr>");
+    }
+
+    document.write("</table>");
+}
+
+let numeroParaMultiplicar = parseInt(prompt("Ingresar número para múltiplicar"))
+tablaMultiplicar(numeroParaMultiplicar)*/
